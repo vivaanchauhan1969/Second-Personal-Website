@@ -1,0 +1,173 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111827;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+.particle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+
+.navigation-bar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    gap: 16px;
+    border: 1px solid white;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.nav-item {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: gray;
+}
+
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    background: linear-gradient(to right, #111827, black);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.divider {
+    border-top: 2px solid white;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+
+.about-section {
+    padding: 5rem 0;
+    background: #1f2937;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 13rem;
+    height: 16rem;
+    border-radius: 50%;
+}
+
+.description {
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+
+.portfolio-section {
+    padding: 5rem 0;
+    background: #111827;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #1f2937;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.project-heading {
+    font-size: 1.5rem;
+    margin: 12px 0;
+}
+
+.project-info {
+    color: #cbd5e1;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: #111827;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-icon {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: gray;
+}
